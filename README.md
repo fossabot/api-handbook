@@ -62,10 +62,10 @@ Preferably, also include a developer-readable `developerMessage` and a `url` dir
 
 ```json
 {
-	"id": "rate_limit",
-    "message": "Maximum number of requests.",
-   	"developerMessage": "This account reached the maximum API rate limit.",
-    "url": "https://api.example.com/docs/rate-limits"
+  "id": "rate_limit",
+  "message": "Maximum number of requests.",
+  "developerMessage": "This account reached the maximum API rate limit.",
+  "url": "https://api.example.com/docs/rate-limits"
 }
 ```
 
@@ -73,7 +73,9 @@ Preferably, also include a developer-readable `developerMessage` and a `url` dir
 
 Each resource should have an `id` attribute. Use only globally unique identifiers that are unique across instances of the service and across resources of the service. This can be accomplished using UUIDs, for example:
 
-`"id": "01234567-89ab-cdef-0123-456789abcdef"`
+```
+"id": "01234567-89ab-cdef-0123-456789abcdef"
+```
 
 Resources should also include `created_at` and `updated_at` timestamps by default, where applicable.
 
@@ -85,7 +87,9 @@ To support client caching, be sure to include an `ETag` header in all responses 
 
 Accept and return times in UTC only, specifically in `ISO8601` format. For example:
 
-`"updated_at": "2012-01-01T12:00:00Z"`
+```
+"updated_at": "2012-01-01T12:00:00Z"
+```
 
 ### Relationships
 
@@ -95,11 +99,11 @@ For example, this is preferred:
 
 ```json
 {
-	"title": "How to document an API"
-    "author": {
-    	"id": "01234567",
-        "name": "John Doe"
-    }
+  "title": "How to document an API",
+  "author": {
+    "id": "01234567",
+    "name": "John Doe"
+  }
 }
 ```
 
@@ -107,8 +111,8 @@ This is not:
 
 ```json
 {
-	"title": "How to document an API"
-    "authorId": "01234567"
+  "title": "How to document an API",
+  "authorId": "01234567"
 }
 ```
 
@@ -118,13 +122,17 @@ This is not:
 
 Use the `Accepts` header with a custom content type. This has the added benefit of pegging a specific request object version as well as an API version. For example:
 
-`application/vnd.blog.post+json; version=2`
+```
+application/vnd.blog.post+json; version=2
+```
 
 ### Request URI
 
 Alternatively, rather than using the [Accepts Header](#accepts-header) approach, the version of the API appears in the URL. For example:
 
-`https://api.example.com/v1/posts`
+```
+https://api.example.com/v1/posts
+```
 
 ## Inspiration and Thanks
 
