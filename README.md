@@ -9,6 +9,8 @@ The echelon.solutions API handbook describing best practices for API development
 
 Please submit an issue to ask a question or start a community discussion around best practices. Open a pull request to have your additions or edits reviewed.
 
+This document can also be viewed at the [GitHub Pages site](https://echelon-solutions.github.io/api-handbook/).
+
 **Contents**
 - [Introduction](#api-handbook)
 - [Security](#security)
