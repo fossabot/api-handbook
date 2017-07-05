@@ -14,19 +14,21 @@ This document can also be viewed at the [GitHub Pages site](https://echelon-solu
 **Contents**
 - [Introduction](#api-handbook)
 - [Security](#security)
-	- [Protocol](#protocol)
+    - [Protocol](#protocol)
     - [Authentication](#authentication)
     - [Authorization](#authorization)
 - [IO](#io)
-	- [Status Codes](#status-codes)
+    - [Status Codes](#status-codes)
     - [Errors](#errors)
     - [Resource Identifiers](#resource-identifiers)
     - [Caching](#caching)
     - [DateTime Format](#datetime-format)
     - [Relationships](#relationships)
 - [Versioning](#versioning)
-	- [Accepts Header](#accepts-header)
+    - [Accepts Header](#accepts-header)
     - [Request URI](#request-uri)
+- [Hypermedia](#hypermedia)
+    - [HATEOAS](#hateoas)
 - [Inspiration and Thanks](#inspiration-and-thanks)
 
 ## Security
@@ -137,6 +139,16 @@ Alternatively, rather than using the [Accepts Header](#accepts-header) approach,
 ```
 https://api.example.com/v1/posts
 ```
+
+## Hypermedia
+
+### HATEOAS
+
+*HATEOAS*: Hypermedia as the engine of application state
+
+Hypermedia is links and metadata for operations that help developers or machines perform additional actions.
+
+“If you look at hypermedia as a recipe of how the next request is supposed to look like, you will grasp what hypermedia is all about” (Read more at http://nordicapis.com/designing-a-true-rest-state-machine/)
 
 ## Inspiration and Thanks
 
