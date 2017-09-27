@@ -1,4 +1,6 @@
 # api-handbook
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fechelon-solutions%2Fapi-handbook.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fechelon-solutions%2Fapi-handbook?ref=badge_shield)
+
 
 The echelon.solutions API handbook describing best practices for API development and management.
 
@@ -156,3 +158,7 @@ Much of the content of this API handbook can be attributed to a collection of fi
 
 - [UC Berkeley Enterprise Integration Services](http://integration-services.berkeley.edu/using-apis/api-best-practices)
 - [Interagent Heroku Platform HTTP API Design Guide](https://github.com/interagent/http-api-design)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fechelon-solutions%2Fapi-handbook.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fechelon-solutions%2Fapi-handbook?ref=badge_large)
